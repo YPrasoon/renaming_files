@@ -6,8 +6,8 @@ import time
 
 def main():
     i = 0
-    source_folder = input("input the source folder : ")
-    workpath = pathlib.PureWindowsPath(source_folder)
+    source_folder = input("input the source folder : ") # need to copy the source folder name here
+    workpath = pathlib.PureWindowsPath(source_folder)   
     path = workpath.as_posix() + "/"
     #path = path + "/"
     for filename in os.listdir(path):
